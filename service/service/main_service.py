@@ -1,4 +1,3 @@
-from os import replace
 import time
 import json
 from loguru import logger
@@ -45,7 +44,7 @@ class PalindromeService():
 
         for text in texts:
 
-            text.replace(" ","")
+            text=text.replace(" ","")
             if text == text[::-1]:
                 respostas.append("palindrome")
             else:
